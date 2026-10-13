@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Model + audio artifacts (regenerable, never commit)
+models/*.onnx
+models/*.pt
+models/*.bin
+models/*.gguf
+cache/render/
+cache/stems/
+cache/embeddings/
+
+# User presets & exports
+exports/
+presets/user/
+*.wav
+*.mp3
+*.flac
+*.ogg
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local config with keys
+config/local.toml
+.env
